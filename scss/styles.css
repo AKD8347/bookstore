@@ -82,7 +82,120 @@ a:hover, a:focus, a:visited {
 }
 
 .header {
+  width: 100%;
   position: relative;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1256px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1256px) {
+  .header__container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .header__container {
+    width: 968px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .header__container {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header__container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .header__container {
+    justify-content: center;
+  }
+}
+.header__logo {
+  display: block;
+  position: relative;
+  float: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1C2A39;
+}
+@media screen and (max-width: 730px) {
+  .header__logo {
+    margin-bottom: 20px;
+  }
+}
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 730px) {
+  .header__menu {
+    margin-bottom: 20px;
+  }
+}
+.header__menu li {
+  margin: 0 20px;
+}
+@media screen and (max-width: 430px) {
+  .header__menu li {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.header__menu li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #5C6A79;
+}
+.header__menu li a:hover {
+  font-weight: 900;
+}
+.header__menu li a.header__menu--active {
+  font-weight: 900;
+}
+.header__icon {
+  display: block;
+  position: relative;
+  float: left;
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+}
+.header__icon--user {
+  background-image: url("../img/icons/user.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.header__icon--search {
+  background-image: url("../img/icons/search.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.header__icon--shop {
+  background-image: url("../img/icons/shop_bag.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
