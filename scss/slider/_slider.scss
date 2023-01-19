@@ -66,4 +66,32 @@
       opacity: 1;
     }
   }
+
+  &__dots {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    &--item {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background-color: #ddd;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 0.4s all;
+
+      &:hover, &.active {
+        background-color: #000000;
+      }
+    }
+  }
 }
