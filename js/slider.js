@@ -2,8 +2,6 @@
 function showSlider (options) {
     //Находим контейнер со слайдами
     let sliderContainer = document.querySelector('.slider__wrapper');
-    //Находим контейнер со стрелками
-    let sliderArrows = document.querySelector('.slider__arrows');
     //Находим все слайды
     let images = document.querySelectorAll('.slider__item');
     //Находим контейнер для точек
@@ -18,8 +16,6 @@ function showSlider (options) {
 
     //Функция инициализвции картинок
     initImages();
-    //Функция инициализвции стрелок
-    initArrows();
     //Функция инициализвции точек
     if (options.dots) {
         initDots()
@@ -48,41 +44,6 @@ function showSlider (options) {
                 //если нет - убираем уктивный класс
                 img.classList.remove('active');
             }
-        })
-    }
-
-    function initArrows() {
-        //находим мтрелки и проходим по ним цыклом
-        sliderArrows.querySelectorAll('.slider__arrow').forEach(arrow => {
-            //каждому найденому элементу вешаем событие click
-            arrow.addEventListener('click', function () {
-                //определяем активный слайд и переводим значение в number
-                let activeSlide = +sliderContainer.querySelector('.active').dataset.index;
-                //определяем количество слайдов
-                let imgLength = images.length;
-                //в переменную nextSlide будем записывать номер следующего слайда
-                let nextSlide;
-                //при клике на стрелку влево
-                if(arrow.classList.contains('slider__arrow--prev')) {
-                    //если текуший слайд первый, мы идем к последнему
-                    if( activeSlide === 0) {
-                        nextSlide = imgLength - 1;
-                    } else {
-                        //если не первое, едем к предыдущему
-                        nextSlide = activeSlide - 1;
-                    }
-                    // nextSlide = activeSlide === 0? imgLength - 1 : activeSlide - 1;
-                } else {
-                    //если текуший слайд последний, мы идем к первому
-                    if (activeSlide === imgLength - 1) {
-                        nextSlide = 0;
-                    } else {
-                        nextSlide = activeSlide + 1;
-                    }
-                }
-                //Функция переключения слайдера, в которую передаем номер акирвного слайда
-                runSlider(nextSlide);
-            });
         })
     }
 
