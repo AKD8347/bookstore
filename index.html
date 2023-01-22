@@ -13,38 +13,196 @@
     <link rel="stylesheet" href="scss/styles.css" type='text/css'>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <a href="#" class="header__logo">Bookshop</a>
-            <ul class="header__menu">
-                <li><a href="#" class="header__menu--active">books</a></li>
-                <li><a href="#">audiobooks</a></li>
-                <li><a href="#">Stationery & gifts</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
-            <ul class="header__menu">
-                <li><a href="#" class="header__icon header__icon--user"></a></li>
-                <li><a href="#" class="header__icon header__icon--search"></a></li>
-                <li><a href="#" class="header__icon header__icon--shop"></a></li>
-            </ul>
+<header class="header">
+    <div class="header__container">
+        <a href="#" class="header__logo">Bookshop</a>
+        <ul class="header__menu">
+            <li><a href="#" class="header__menu--active">books</a></li>
+            <li><a href="#">audiobooks</a></li>
+            <li><a href="#">Stationery & gifts</a></li>
+            <li><a href="#">blog</a></li>
+        </ul>
+        <ul class="header__menu">
+            <li><a href="#" class="header__icon header__icon--user"></a></li>
+            <li><a href="#" class="header__icon header__icon--search"></a></li>
+            <li><a href="#" class="header__icon header__icon--shop"></a></li>
+        </ul>
+    </div>
+</header>
+<section class="slider">
+    <div class="slider__container">
+        <div class="slider__wrapper">
+            <div class="slider__item">
+                <img src="img/slider/slide1.png" alt="Первый слайд">
+            </div>
+            <div class="slider__item">
+                <img src="img/slider/slide2.png" alt="Второй слайд">
+            </div>
+            <div class="slider__item">
+                <img src="img/slider/slide3.png" alt="Третий слайд">
+            </div>
+
+            <div class="slider__arrows">
+                <a href="#" class="slider__arrow slider__arrow--prev">&#10094;</a>
+                <a href="#" class="slider__arrow slider__arrow--next">&#10095;</a>
+            </div>
         </div>
-    </header>
-    <section class="slider">
-        <div class="slider__container">
-            <div class="slider__wrapper">
-                <div class="slider__item">
-                    <img src="img/slider/slide1.png" alt="Первый слайд">
-                </div>
-                <div class="slider__item">
-                    <img src="img/slider/slide2.png" alt="Второй слайд">
-                </div>
-                <div class="slider__item">
-                    <img src="img/slider/slide3.png" alt="Третий слайд">
+
+        <ul class="slider__dots"></ul>
+    </div>
+</section>
+<section class="books">
+    <div class="books__container">
+        <a href="#" class="books__mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="books__menu">
+            <li><a href="#" class="active">Architecture</a></li>
+            <li><a href="#">Art & Fashion</a></li>
+            <li><a href="#">Biography</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Crafts & Hobbies</a></li>
+            <li><a href="#">Drama</a></li>
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Food & Drink</a></li>
+            <li><a href="#">Health & Wellbeing</a></li>
+            <li><a href="#">History & Politics</a></li>
+            <li><a href="#">Humor</a></li>
+            <li><a href="#">Poetry</a></li>
+            <li><a href="#">Psychology</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Travel & Maps</a></li>
+        </ul>
+        <div class="books__grid">
+            <div class="books__element">
+                <a href="#" class="books__img">
+                    <img src="img/books/book1.png" alt="book">
+                </a>
+                <div class="books__info">
+                    <p class="books__author">Kevin Kwan</p>
+                    <h3 class="books__title">Crazy rich asians</h3>
+                    <div class="books__rating">
+                        <div class="books__rating--stars"></div>
+                        <span class="books__rating--review">252 review</span>
+                    </div>
+                    <p class="books__about">the outrageously funny debut novel about three super-rich, pedigreed Chinese
+                        families and the
+                        gossip the outrageously funny debut novel about three super-rich, pedigreed Chinese families and
+                        the gossip</p>
+                    <p class="books__price">$4.99</p>
+
+                    <button class="books__buy">buy now</button>
                 </div>
             </div>
-            <ul class="slider__dots"></ul>
+            <div class="books__element">
+                <a href="#" class="books__img">
+                    <img src="img/books/book2.png" alt="book">
+                </a>
+                <div class="books__info">
+                    <p class="books__author">Margaret Atwood</p>
+                    <h3 class="books__title">The handmaid’s tale</h3>
+                    <div class="books__rating">
+                        <div class="books__rating--stars"></div>
+                        <span class="books__rating--review">1,1M review</span>
+                    </div>
+                    <p class="books__about">This novel can be interpreted as a double narrative, Offred's tale and the
+                        handmaids' tales. The night This novel can be interpreted as a double narrative, Offred's tale and the
+                        handmaids' tales. The night</p>
+                    <p class="books__price">$6.99</p>
+
+                    <button class="books__buy books__buy--active">in the cart</button>
+                </div>
+            </div>
+            <div class="books__element">
+                <a href="#" class="books__img">
+                    <img src="img/books/book1.png" alt="book">
+                </a>
+                <div class="books__info">
+                    <p class="books__author">Kevin Kwan</p>
+                    <h3 class="books__title">Crazy rich asians</h3>
+                    <div class="books__rating">
+                        <div class="books__rating--stars"></div>
+                        <span class="books__rating--review">252 review</span>
+                    </div>
+                    <p class="books__about">the outrageously funny debut novel about three super-rich, pedigreed Chinese
+                        families and the
+                        gossip the outrageously funny debut novel about three super-rich, pedigreed Chinese families and
+                        the gossip</p>
+                    <p class="books__price">$4.99</p>
+
+                    <button class="books__buy">buy now</button>
+                </div>
+            </div>
+            <div class="books__element">
+                <a href="#" class="books__img">
+                    <img src="img/books/book1.png" alt="book">
+                </a>
+                <div class="books__info">
+                    <p class="books__author">Kevin Kwan</p>
+                    <h3 class="books__title">Crazy rich asians</h3>
+                    <div class="books__rating">
+                        <div class="books__rating--stars"></div>
+                        <span class="books__rating--review">252 review</span>
+                    </div>
+                    <p class="books__about">the outrageously funny debut novel about three super-rich, pedigreed Chinese
+                        families and the
+                        gossip the outrageously funny debut novel about three super-rich, pedigreed Chinese families and
+                        the gossip</p>
+                    <p class="books__price">$4.99</p>
+
+                    <button class="books__buy">buy now</button>
+                </div>
+            </div>
+            <div class="books__element">
+                <a href="#" class="books__img">
+                    <img src="img/books/book1.png" alt="book">
+                </a>
+                <div class="books__info">
+                    <p class="books__author">Kevin Kwan</p>
+                    <h3 class="books__title">Crazy rich asians</h3>
+                    <div class="books__rating">
+                        <div class="books__rating--stars"></div>
+                        <span class="books__rating--review">252 review</span>
+                    </div>
+                    <p class="books__about">the outrageously funny debut novel about three super-rich, pedigreed Chinese
+                        families and the
+                        gossip the outrageously funny debut novel about three super-rich, pedigreed Chinese families and
+                        the gossip</p>
+                    <p class="books__price">$4.99</p>
+
+                    <button class="books__buy">buy now</button>
+                </div>
+            </div>
+            <div class="books__element">
+                <a href="#" class="books__img">
+                    <img src="img/books/book1.png" alt="book">
+                </a>
+                <div class="books__info">
+                    <p class="books__author">Kevin Kwan</p>
+                    <h3 class="books__title">Crazy rich asians</h3>
+                    <div class="books__rating">
+                        <div class="books__rating--stars"></div>
+                        <span class="books__rating--review">252 review</span>
+                    </div>
+                    <p class="books__about">the outrageously funny debut novel about three super-rich, pedigreed Chinese
+                        families and the
+                        gossip the outrageously funny debut novel about three super-rich, pedigreed Chinese families and
+                        the gossip</p>
+                    <p class="books__price">$4.99</p>
+
+                    <button class="books__buy">buy now</button>
+                </div>
+            </div>
         </div>
-    </section>
-    <script src="js/slider.js"></script>
+        <div class="books__loading">
+            <button class="books__buy">Load more</button>
+        </div>
+    </div>
+</section>
+<script src="js/slider.js"></script>
+<script src="js/book_menu.js"></script>
 </body>
 </html>
