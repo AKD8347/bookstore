@@ -106,7 +106,6 @@ let sliderOptions = {
     interval: 5000
 }
 
-
 document.addEventListener("DOMContentLoaded", function(){
     showSlider(sliderOptions);
 });
